@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    $("#before-after").click(function () {
+    $("#beforeAfterCharts").click(function () {
         $('img', this).toggle();
     });
 });
