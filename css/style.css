@@ -1,0 +1,50 @@
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.container:nth-child(odd) {
+  background: black;
+  color: white;
+}
+
+.container:nth-child(even) {
+  background: gray;
+  color: white;
+}
+
+#beforeAfterCharts {
+  display: flexbox;
+}
+
+img.before {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: 0;
+  left: 0;
+  display: block;
+}
+
+img.after {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: 0;
+  left: 0;
+  display: none;
+}
+/*# sourceMappingURL=style.css.map */

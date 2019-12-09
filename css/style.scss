@@ -1,0 +1,51 @@
+*,
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    box-sizing: border-box;
+    position: relative;
+    // padding: 9em;
+    // margin: 0 -1em;
+    //To compensate for horizontal overflow. Inserted -1em margin left and right.
+    margin: 0;
+    padding: 0;
+}
+
+.container:nth-child(odd) {
+    background: black;
+    color: white;
+}
+
+.container:nth-child(even) {
+    background: gray;
+    color: white;
+}
+
+#beforeAfterCharts {
+    display: flexbox;
+}
+
+img.before {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 0;
+    display: block;
+}
+
+img.after {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 0;
+    display: none;
+}
