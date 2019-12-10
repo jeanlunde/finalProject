@@ -17,13 +17,32 @@ body {
 }
 
 .container:nth-child(odd) {
-  background: black;
-  color: white;
+  background: white;
 }
 
 .container:nth-child(even) {
-  background: gray;
-  color: white;
+  background: black;
+  color: black;
+}
+
+#charactersAll {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: .5;
+  z-index: 1;
+}
+
+#charactersSelective {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: .1;
+  z-index: 2;
 }
 
 #beforeAfterCharts {
@@ -32,7 +51,7 @@ body {
 
 img.before {
   position: absolute;
-  width: 100%;
+  width: 75%;
   height: auto;
   top: 0;
   left: 0;
@@ -41,7 +60,7 @@ img.before {
 
 img.after {
   position: absolute;
-  width: 100%;
+  width: 75%;
   height: auto;
   top: 0;
   left: 0;
