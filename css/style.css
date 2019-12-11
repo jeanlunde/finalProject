@@ -67,7 +67,6 @@ img.after {
   display: none;
 }
 
-/* Splitting css starts here */
 .tiler {
   display: inline-block;
   cursor: pointer;
@@ -105,11 +104,14 @@ img.after {
           transform: translateZ(-15px);
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
+  -webkit-transition-property: opacity, -webkit-transform;
   transition-property: opacity, -webkit-transform;
   transition-property: transform, opacity;
   transition-property: transform, opacity, -webkit-transform;
-  transition-duration: 0.5s, 0.4s;
-  transition-timing-function: cubic-bezier(0.65, 0.01, 0.15, 1.33);
+  -webkit-transition-duration: 0.5s, 0.4s;
+          transition-duration: 0.5s, 0.4s;
+  -webkit-transition-timing-function: cubic-bezier(0.65, 0.01, 0.15, 1.33);
+          transition-timing-function: cubic-bezier(0.65, 0.01, 0.15, 1.33);
   /* The center character index */
   --center-x: calc((var(--col-total) - 1) / 2);
   --center-y: calc((var(--row-total) - 1) / 2);
@@ -118,13 +120,14 @@ img.after {
   --offset-y: calc(var(--row-index) - var(--center-y));
   /* Absolute distance from center, only positive */
   --distance-x: calc(
-    (var(--offset-x) * var(--offset-x)) / var(--center-x)
-  );
+      (var(--offset-x) * var(--offset-x)) / var(--center-x)
+    );
   /* Absolute distance from center, only positive */
   --distance-y: calc(
-    (var(--offset-y) * var(--offset-y)) / var(--center-y)
-  );
-  transition-delay: calc( 0.1s * var(--distance-y) + 0.1s * var(--distance-x) );
+      (var(--offset-y) * var(--offset-y)) / var(--center-y)
+    );
+  -webkit-transition-delay: calc( 0.1s * var(--distance-y) + 0.1s * var(--distance-x));
+          transition-delay: calc( 0.1s * var(--distance-y) + 0.1s * var(--distance-x));
 }
 
 .tiler-overlay {
@@ -139,17 +142,20 @@ img.after {
 
 html {
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   background: #323643;
 }
 
 body {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   max-width: 800px;
   padding: 2em;
   margin: auto;
 }
-
-
 /*# sourceMappingURL=style.css.map */
