@@ -17,11 +17,11 @@ body {
 }
 
 .container:nth-child(odd) {
-  background: white;
+  background: black;
 }
 
 .container:nth-child(even) {
-  background: black;
+  background: white;
   color: black;
 }
 
@@ -31,7 +31,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  opacity: .5;
+  opacity: .7;
   z-index: 1;
 }
 
@@ -41,7 +41,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  opacity: .1;
+  opacity: .9;
   z-index: 2;
 }
 
