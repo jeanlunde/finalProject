@@ -2,97 +2,104 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Data Visualization</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Data Visualization</title>
+  <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting.css" />
+  <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting-cells.css" />
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <!-- Use Illustrator to create an img.SVG containing the entire set of characters. Create a second img.SVG of the positioned selected characters. Superimpose the second image on the first image, and manipulate the opacity of each in JS. (Images must be rsponsive.) -->
-    <div class="container" id="backgroundCharacters">
-        <img id="charactersAll" src="images/characters-all.svg" alt="background characters pattern">
-        <img id="charactersSelective" src="images/characters-selective.svg" alt="letters spelling DATA VISUALIZATION">
+  <!-- Use Illustrator to create an img.SVG containing the entire set of characters. Create a second img.SVG of the positioned selected characters. Superimpose the second image on the first image, and manipulate the opacity of each in JS. (Images must be rsponsive.) -->
+  <div class="container" id="backgroundCharacters">
+    <img id="charactersAll" src="images/characters-all.svg" alt="background characters pattern">
+    <img id="charactersSelective" src="images/characters-selective.svg" alt="letters spelling DATA VISUALIZATION">
 
+  </div>
+
+  <div class="container" id="chartTypes">
+    <!-- Splitting html begins here. -->
+    <div class="tiler">
+      <img src="images/horizontal-bar.jpg" />
     </div>
 
-    <div class="container" id="chartTypes">
-        <!-- Splitting html begins here. -->
-        <div class="tiler">
-                <img src="images/horizontal-bar.jpg" />
-              </div>
-              
-              <div class="tiler">
-                <img src="images/vertical-bar.jpg" />
-              </div>
-              
-              <div class="tiler">
-                <img src="images/line.jpg" />
-              </div>
-              
-              
-              <div class="tiler">
-                <img src="images/stacked-bar.jpg" />
-              </div>
-              
-              
-              <div class="tiler">
-                <img src="images/simple-text.jpg" />
-              </div>
-              
-              
-              <div class="tiler">
-                <img src="images/slope-graph.jpg" />
-              </div>
-              
-              
-              <div class="tiler">
-                <img src="images/scatterplot.jpg" />
-              </div>
-              
-              
-              <div class="tiler">
-                <img src="images/heatmap.jpg" />
-              </div>
-              
-              
-              <div class="tiler">
-                <img src="images/pie.jpg" />
-              </div>
+    <div class="tiler">
+      <img src="images/vertical-bar.jpg" />
     </div>
 
-    <div class="container" id="chartDecluttering">
-
-    </div>
-
-    <div class="container" id="gestaltPrinciples">
-
-    </div>
-
-    <div class="container" id="beforeAfterCharts">
-        <img class="before" id="survey-before" src="images/survey-before.jpg" alt="survey-before">
-        <img class="after" id="survey-after" src="images/survey-after.jpg" alt="survey-after">
+    <div class="tiler">
+      <img src="images/line.jpg" />
     </div>
 
 
-    <!---------------------------------- javascript begins here---------------------------------------------->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <div class="tiler">
+      <img src="images/stacked-bar.jpg" />
+    </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"
-        integrity="sha256-2p2tRZlPowp3P/04Pw2rqVCSbhyV/IB7ZEVUglrDS/c=" crossorigin="anonymous"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"
-        integrity="sha256-XBVALc3QsDSQiDtiaBwNZ2rxCJTHzlUhhlDQ84J8bw8=" crossorigin="anonymous"></script>
+    <div class="tiler">
+      <img src="images/simple-text.jpg" />
+    </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"
-        integrity="sha256-+9YNuItWuR4sbqeaNiJOxG0BvptYz4fbUXbIZoH5Jwo=" crossorigin="anonymous"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
-        integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
+    <div class="tiler">
+      <img src="images/slope-graph.jpg" />
+    </div>
 
-    <script src="js/script.js"></script>
+
+    <div class="tiler">
+      <img src="images/scatterplot.jpg" />
+    </div>
+
+
+    <div class="tiler">
+      <img src="images/heatmap.jpg" />
+    </div>
+
+
+    <div class="tiler">
+      <img src="images/pie.jpg" />
+    </div>
+  </div>
+
+  <div class="container" id="chartDecluttering">
+
+  </div>
+
+  <div class="container" id="gestaltPrinciples">
+
+  </div>
+
+  <div class="container" id="beforeAfterCharts">
+    <img class="before" id="survey-before" src="images/survey-before.jpg" alt="survey-before">
+    <img class="after" id="survey-after" src="images/survey-after.jpg" alt="survey-after">
+  </div>
+
+
+  <!---------------------------------- javascript begins here---------------------------------------------->
+  
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"
+    integrity="sha256-2p2tRZlPowp3P/04Pw2rqVCSbhyV/IB7ZEVUglrDS/c=" crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"
+    integrity="sha256-XBVALc3QsDSQiDtiaBwNZ2rxCJTHzlUhhlDQ84J8bw8=" crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"
+    integrity="sha256-+9YNuItWuR4sbqeaNiJOxG0BvptYz4fbUXbIZoH5Jwo=" crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
+    integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
+
+  <script src="js/script.js"></script>
+
+  <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
+
+  <script src="js/splitting.js"></script>
 </body>
 
 </html>
