@@ -1,166 +1,175 @@
 *,
 html,
 body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-    box-sizing: border-box;
-    position: relative;
-    // padding: 9em;
-    // margin: 0 -1em;
-    //To compensate for horizontal overflow. Inserted -1em margin left and right.
-    margin: 0;
-    padding: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  box-sizing: border-box;
+  position: relative;
+  // padding: 9em;
+  // margin: 0 -1em;
+  //To compensate for horizontal overflow. Inserted -1em margin left and right.
+  margin: 0;
+  padding: 0;
 }
 
 .container:nth-child(odd) {
-    background: black;
+  background: black;
 }
 
 .container:nth-child(even) {
-    background: white;
-    color: black;
+  background: white;
+  color: black;
 }
 
 #charactersAll {
-    width: 100%;
-    height: auto;
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: .5;
-    z-index: 1;
-    display: none;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: none;
 }
 
 #charactersSelective {
-    width: 100%;
-    height: auto;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 2;
-    display: none;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  display: none;
 }
 
 #beforeAfterCharts {
-    display: flexbox;
+  display: flexbox;
 }
 
 img.before {
-    position: absolute;
-    width: 75%;
-    height: auto;
-    top: 0;
-    left: 0;
-    display: block;
+  position: absolute;
+  width: 75%;
+  height: auto;
+  top: 0;
+  left: 0;
+  display: block;
 }
 
 img.after {
-    position: absolute;
-    width: 75%;
-    height: auto;
-    top: 0;
-    left: 0;
-    display: none;
+  position: absolute;
+  width: 75%;
+  height: auto;
+  top: 0;
+  left: 0;
+  display: none;
 }
 
 // Splitting scss begins here.
 
 .tiler {
-    display: inline-block;
-    cursor: pointer;
-    visibility: hidden;
-    width: 33%;
-    margin: auto;
-  }
-  
-  .tiler img { 
-    display: block;  
-    margin: auto; 
-    max-width: 100%;
-    visibility: visible;
-  }
-  
-  .tiler .cell-grid {
-    background-position: center center;
-    margin: auto;
-    position: fixed;
-    top: 1em;
-    bottom: 1em;
-    left: 1em;
-    right: 1em;
-    z-index: 10;
-    
-    max-width: 1000px;
-    max-height: 600px;
-  
-    perspective: 30px;
-    
-    // &:before {
-    //   content: '';
-    //   display: block;
-    //   visibility: visible;
-    //   position: absolute;
-    //   top: 0; right: 0; bottom: 0; left: 0;
-    //   margin: auto;
-    //   box-shadow: 0 1em 2em rgba(0,0,0,0.3);
-    // }
-  }
-  
-  .tiler .cell { 
-    pointer-events: none;
-    opacity: 0;
-  
-    transform: translateZ(-15px);
-    transform-style: preserve-3d;
-  
-    transition-property: transform, opacity;
-    transition-duration: 0.5s, 0.4s;
-    transition-timing-function: cubic-bezier(.65,.01,.15,1.33);//, linear;
-  
-    /* The center character index */
-    --center-x: calc((var(--col-total) - 1) / 2);
-    --center-y: calc((var(--row-total) - 1) / 2);
-  
-    /* Offset from center, positive & negative */
-    --offset-x: calc(var(--col-index) - var(--center-x));
-    --offset-y: calc(var(--row-index) - var(--center-y));
-  
-    /* Absolute distance from center, only positive */
-    --distance-x: calc(
-      (var(--offset-x) * var(--offset-x)) / var(--center-x)
-    );
-  
-    /* Absolute distance from center, only positive */
-    --distance-y: calc(
-      (var(--offset-y) * var(--offset-y)) / var(--center-y)
-    );
-  
-    transition-delay: calc( 0.1s * var(--distance-y) + 0.1s * var(--distance-x) );
-  }
-  
-  // .tiler { transition: z-index 0.3s linear; }
-  
-  .tiler-overlay { z-index: 2; }
-  .tiler:hover {
-   
-    .cell { 
-      // pointer-events: auto;
-      transform: scale(1);
-      opacity: 1; 
-    
-    }
-  }
-  
-  
-  html { height: 100%; display: flex; background: #323643; }
-  body { display: flex; flex-wrap: wrap; max-width: 800px; padding: 2em; margin: auto; }
+  display: inline-block;
+  cursor: pointer;
+  visibility: hidden;
+  width: 33%;
+  margin: auto;
+}
 
-  //https://codepen.io/jal52/pen/eYYPdww
-  //https://splitting.js.org/guide.html#what-is-splitting
+.tiler img {
+  display: block;
+  margin: auto;
+  max-width: 100%;
+  visibility: visible;
+}
+
+.tiler .cell-grid {
+  background-position: center center;
+  margin: auto;
+  position: fixed;
+  top: 1em;
+  bottom: 1em;
+  left: 1em;
+  right: 1em;
+  z-index: 10;
+
+  max-width: 1000px;
+  max-height: 600px;
+
+  perspective: 30px;
+
+  // &:before {
+  //   content: '';
+  //   display: block;
+  //   visibility: visible;
+  //   position: absolute;
+  //   top: 0; right: 0; bottom: 0; left: 0;
+  //   margin: auto;
+  //   box-shadow: 0 1em 2em rgba(0,0,0,0.3);
+  // }
+}
+
+.tiler .cell {
+  pointer-events: none;
+  opacity: 0;
+
+  transform: translateZ(-15px);
+  transform-style: preserve-3d;
+
+  transition-property: transform, opacity;
+  transition-duration: 0.5s, 0.4s;
+  transition-timing-function: cubic-bezier(.65, .01, .15, 1.33); //, linear;
+
+  /* The center character index */
+  --center-x: calc((var(--col-total) - 1) / 2);
+  --center-y: calc((var(--row-total) - 1) / 2);
+
+  /* Offset from center, positive & negative */
+  --offset-x: calc(var(--col-index) - var(--center-x));
+  --offset-y: calc(var(--row-index) - var(--center-y));
+
+  /* Absolute distance from center, only positive */
+  --distance-x: calc((var(--offset-x) * var(--offset-x)) / var(--center-x));
+
+  /* Absolute distance from center, only positive */
+  --distance-y: calc((var(--offset-y) * var(--offset-y)) / var(--center-y));
+
+  transition-delay: calc(0.1s * var(--distance-y) + 0.1s * var(--distance-x));
+}
+
+// .tiler { transition: z-index 0.3s linear; }
+
+.tiler-overlay {
+  z-index: 2;
+}
+
+.tiler:hover {
+
+  .cell {
+    // pointer-events: auto;
+    transform: scale(1);
+    opacity: 1;
+
+  }
+}
+
+
+html {
+  height: 100%;
+  display: flex;
+  background: #323643;
+}
+
+body {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 800px;
+  padding: 2em;
+  margin: auto;
+}
+
+//https://codepen.io/jal52/pen/eYYPdww
+//https://splitting.js.org/guide.html#what-is-splitting

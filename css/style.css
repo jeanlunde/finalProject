@@ -31,7 +31,6 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  opacity: .5;
   z-index: 1;
   display: none;
 }
@@ -120,15 +119,11 @@ img.after {
   --offset-x: calc(var(--col-index) - var(--center-x));
   --offset-y: calc(var(--row-index) - var(--center-y));
   /* Absolute distance from center, only positive */
-  --distance-x: calc(
-      (var(--offset-x) * var(--offset-x)) / var(--center-x)
-    );
+  --distance-x: calc((var(--offset-x) * var(--offset-x)) / var(--center-x));
   /* Absolute distance from center, only positive */
-  --distance-y: calc(
-      (var(--offset-y) * var(--offset-y)) / var(--center-y)
-    );
-  -webkit-transition-delay: calc( 0.1s * var(--distance-y) + 0.1s * var(--distance-x));
-          transition-delay: calc( 0.1s * var(--distance-y) + 0.1s * var(--distance-x));
+  --distance-y: calc((var(--offset-y) * var(--offset-y)) / var(--center-y));
+  -webkit-transition-delay: calc(0.1s * var(--distance-y) + 0.1s * var(--distance-x));
+          transition-delay: calc(0.1s * var(--distance-y) + 0.1s * var(--distance-x));
 }
 
 .tiler-overlay {

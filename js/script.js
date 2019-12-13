@@ -1,8 +1,8 @@
 $(document).ready(function () {
-  $("#charactersAll").fadeIn(3000);
-  $("#charactersSelective").delay(2000).fadeIn(5000);
+  $("#charactersAll").fadeIn(5000);
+  $("#charactersSelective").delay(2000).fadeIn(6000);
   $("#beforeAfterCharts").click(function () {
-    $('img', this).toggle();
+    $('img', this).fadeToggle();
   });
 });
 
