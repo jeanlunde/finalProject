@@ -31,8 +31,9 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  opacity: .7;
+  opacity: .5;
   z-index: 1;
+  display: none;
 }
 
 #charactersSelective {
@@ -41,8 +42,8 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  opacity: .9;
   z-index: 2;
+  display: none;
 }
 
 #beforeAfterCharts {

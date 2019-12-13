@@ -1,7 +1,9 @@
 $(document).ready(function () {
-    $("#beforeAfterCharts").click(function () {
-        $('img', this).toggle();
-    });
+  $("#charactersAll").fadeIn(3000);
+  $("#charactersSelective").delay(2000).fadeIn(5000);
+  $("#beforeAfterCharts").click(function () {
+    $('img', this).toggle();
+  });
 });
 
 console.clear();
