@@ -47,27 +47,7 @@ body {
   display: none;
 }
 
-#beforeAfterCharts {
-  display: flexbox;
-}
 
-img.before {
-  position: absolute;
-  width: 75%;
-  height: auto;
-  top: 0;
-  left: 0;
-  display: block;
-}
-
-img.after {
-  position: absolute;
-  width: 75%;
-  height: auto;
-  top: 0;
-  left: 0;
-  display: none;
-}
 
 // Splitting scss begins here.
 
@@ -152,10 +132,8 @@ img.after {
     // pointer-events: auto;
     transform: scale(1);
     opacity: 1;
-
   }
 }
-
 
 html {
   height: 100%;
@@ -173,3 +151,76 @@ body {
 
 //https://codepen.io/jal52/pen/eYYPdww
 //https://splitting.js.org/guide.html#what-is-splitting
+
+
+#chartDecluttering {
+  background: white;
+
+   img.declutter {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 15%;
+    left: 0;
+
+    .declutter #original {
+      z-index: 0;
+    }
+
+    .declutter #step1 {
+      opacity: 0;
+    }
+
+    .declutter #step2 {
+      z-index: 2;
+      opacity: 0;
+    }
+
+    .declutter #step3 {
+      z-index: 3;
+      opacity: 0;
+    }
+
+    .declutter #step4 {
+      z-index: 4;
+      opacity: 0;
+    }
+
+    .declutter #step5 {
+      z-index: 5;
+      opacity: 0;
+    }
+
+    .declutter #step6 {
+      z-index: 6;
+      opacity: 0;
+    }
+
+    .declutter #finished {
+      z-index: 7;
+      opacity: 0;
+    }
+  }
+}
+
+#beforeAfterCharts {
+  display: flexbox;
+}
+
+img.before {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: 25%;
+  left: 0;
+  display: block;
+}
+
+img.after {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: 25%;
+  left: 0;
+  display: none;
+}

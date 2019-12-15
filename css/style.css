@@ -45,28 +45,6 @@ body {
   display: none;
 }
 
-#beforeAfterCharts {
-  display: flexbox;
-}
-
-img.before {
-  position: absolute;
-  width: 75%;
-  height: auto;
-  top: 0;
-  left: 0;
-  display: block;
-}
-
-img.after {
-  position: absolute;
-  width: 75%;
-  height: auto;
-  top: 0;
-  left: 0;
-  display: none;
-}
-
 .tiler {
   display: inline-block;
   cursor: pointer;
@@ -153,5 +131,77 @@ body {
   max-width: 800px;
   padding: 2em;
   margin: auto;
+}
+
+#chartDecluttering {
+  background: white;
+}
+
+#chartDecluttering img.declutter {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: 15%;
+  left: 0;
+}
+
+#chartDecluttering img.declutter .declutter #original {
+  z-index: 0;
+}
+
+#chartDecluttering img.declutter .declutter #step1 {
+  opacity: 0;
+}
+
+#chartDecluttering img.declutter .declutter #step2 {
+  z-index: 2;
+  opacity: 0;
+}
+
+#chartDecluttering img.declutter .declutter #step3 {
+  z-index: 3;
+  opacity: 0;
+}
+
+#chartDecluttering img.declutter .declutter #step4 {
+  z-index: 4;
+  opacity: 0;
+}
+
+#chartDecluttering img.declutter .declutter #step5 {
+  z-index: 5;
+  opacity: 0;
+}
+
+#chartDecluttering img.declutter .declutter #step6 {
+  z-index: 6;
+  opacity: 0;
+}
+
+#chartDecluttering img.declutter .declutter #finished {
+  z-index: 7;
+  opacity: 0;
+}
+
+#beforeAfterCharts {
+  display: flexbox;
+}
+
+img.before {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: 25%;
+  left: 0;
+  display: block;
+}
+
+img.after {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: 25%;
+  left: 0;
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */
