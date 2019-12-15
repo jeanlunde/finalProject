@@ -135,9 +135,10 @@ body {
 
 #chartDecluttering {
   background: white;
+  position: relative;
 }
 
-#chartDecluttering img.declutter {
+#chartDecluttering .declutter {
   position: absolute;
   width: 100%;
   height: auto;
@@ -145,42 +146,42 @@ body {
   left: 0;
 }
 
-#chartDecluttering img.declutter .declutter #original {
+#chartDecluttering .declutter #original {
   z-index: 0;
 }
 
-#chartDecluttering img.declutter .declutter #step1 {
-  opacity: 0;
+#chartDecluttering .declutter #step1 {
+  display: none;
 }
 
-#chartDecluttering img.declutter .declutter #step2 {
+#chartDecluttering .declutter #step2 {
   z-index: 2;
-  opacity: 0;
+  display: none;
 }
 
-#chartDecluttering img.declutter .declutter #step3 {
+#chartDecluttering .declutter #step3 {
   z-index: 3;
-  opacity: 0;
+  display: none;
 }
 
-#chartDecluttering img.declutter .declutter #step4 {
+#chartDecluttering .declutter #step4 {
   z-index: 4;
-  opacity: 0;
+  display: none;
 }
 
-#chartDecluttering img.declutter .declutter #step5 {
+#chartDecluttering .declutter #step5 {
   z-index: 5;
-  opacity: 0;
+  display: none;
 }
 
-#chartDecluttering img.declutter .declutter #step6 {
+#chartDecluttering .declutter #step6 {
   z-index: 6;
-  opacity: 0;
+  display: none;
 }
 
-#chartDecluttering img.declutter .declutter #finished {
+#chartDecluttering .declutter #finished {
   z-index: 7;
-  opacity: 0;
+  display: none;
 }
 
 #beforeAfterCharts {
