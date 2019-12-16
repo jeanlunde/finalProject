@@ -152,6 +152,7 @@ body {
 
 #chartDecluttering #original {
   z-index: 0;
+  display: none;
 }
 
 #chartDecluttering #step1 {
