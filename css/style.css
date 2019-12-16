@@ -133,53 +133,58 @@ body {
   margin: auto;
 }
 
-#chartDecluttering {
-  background: white;
-  position: relative;
+#chartTypes {
+  background: black;
 }
 
-#chartDecluttering .declutter {
+#chartDecluttering {
+  position: relative;
+  background-color: white;
+}
+
+#chartDecluttering img.declutter {
   position: absolute;
-  width: 100%;
-  height: auto;
-  top: 15%;
+  width: 711px;
+  height: 417px;
+  top: 0;
   left: 0;
 }
 
-#chartDecluttering .declutter #original {
+#chartDecluttering #original {
   z-index: 0;
 }
 
-#chartDecluttering .declutter #step1 {
+#chartDecluttering #step1 {
+  z-index: 1;
   display: none;
 }
 
-#chartDecluttering .declutter #step2 {
+#chartDecluttering #step2 {
   z-index: 2;
   display: none;
 }
 
-#chartDecluttering .declutter #step3 {
+#chartDecluttering #step3 {
   z-index: 3;
   display: none;
 }
 
-#chartDecluttering .declutter #step4 {
+#chartDecluttering #step4 {
   z-index: 4;
   display: none;
 }
 
-#chartDecluttering .declutter #step5 {
+#chartDecluttering #step5 {
   z-index: 5;
   display: none;
 }
 
-#chartDecluttering .declutter #step6 {
+#chartDecluttering #step6 {
   z-index: 6;
   display: none;
 }
 
-#chartDecluttering .declutter #finished {
+#chartDecluttering #finished {
   z-index: 7;
   display: none;
 }
@@ -204,5 +209,13 @@ img.after {
   top: 25%;
   left: 0;
   display: none;
+}
+
+#gestaltPrinciples {
+  background: black;
+}
+
+#beforeAfterCharts {
+  background: white;
 }
 /*# sourceMappingURL=style.css.map */

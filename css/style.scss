@@ -153,23 +153,30 @@ body {
 //https://splitting.js.org/guide.html#what-is-splitting
 
 
-#chartDecluttering {
-  background: white;
-  position: relative;
+#chartTypes {
+  background: black;
+}
 
-  .declutter {
+#chartDecluttering {
+  position: relative;
+  background-color: white;
+
+  img.declutter {
     position: absolute;
-    width: 100%;
-    height: auto;
-    top: 15%;
+    width: 711px;
+    height: 417px;
+    top: 0;
     left: 0;
+  }
 
     #original {
       z-index: 0;
+      // display: none;
     }
 
     #step1 {
-      display: none;
+      z-index: 1;
+      display: none;      
     }
 
     #step2 {
@@ -201,7 +208,6 @@ body {
       z-index: 7;
       display: none;
     }
-  }
 }
 
 #beforeAfterCharts {
@@ -224,4 +230,12 @@ img.after {
   top: 25%;
   left: 0;
   display: none;
+}
+
+#gestaltPrinciples {
+  background: black;
+}
+
+#beforeAfterCharts {
+  background: white;
 }
