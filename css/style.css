@@ -138,11 +138,16 @@ body {
 }
 
 #chartDecluttering {
-  position: relative;
   background-color: white;
 }
 
-#chartDecluttering img.declutter {
+#chartDecluttering .declutterWrapper {
+  display: block;
+  width: 100%;
+  height: 450px;
+}
+
+#chartDecluttering .declutterWrapper img.declutter {
   position: absolute;
   width: 711px;
   height: 417px;
@@ -150,44 +155,107 @@ body {
   left: 0;
 }
 
-#chartDecluttering #original {
+#chartDecluttering .declutterWrapper #original {
   z-index: 0;
-  display: none;
 }
 
-#chartDecluttering #step1 {
+#chartDecluttering .declutterWrapper #step1 {
   z-index: 1;
   display: none;
 }
 
-#chartDecluttering #step2 {
+#chartDecluttering .declutterWrapper #step2 {
   z-index: 2;
   display: none;
 }
 
-#chartDecluttering #step3 {
+#chartDecluttering .declutterWrapper #step3 {
   z-index: 3;
   display: none;
 }
 
-#chartDecluttering #step4 {
+#chartDecluttering .declutterWrapper #step4 {
   z-index: 4;
   display: none;
 }
 
-#chartDecluttering #step5 {
+#chartDecluttering .declutterWrapper #step5 {
   z-index: 5;
   display: none;
 }
 
-#chartDecluttering #step6 {
+#chartDecluttering .declutterWrapper #step6 {
   z-index: 6;
   display: none;
 }
 
-#chartDecluttering #finished {
+#chartDecluttering .declutterWrapper #finished {
   z-index: 7;
   display: none;
+}
+
+#chartDecluttering .buttonWrapper {
+  display: block;
+  width: 50%;
+  height: 50px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.button {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: blue;
+  color: white;
+  border-radius: 50%;
+}
+
+.buttonA {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: blue;
+  color: white;
+  border-radius: 50%;
+}
+
+.buttonB {
+  display: block;
+  padding: 8px 16px;
+  background-color: blue;
+  color: white;
+  border-radius: 50%;
+}
+
+.buttonC {
+  display: block;
+  padding: 8px 16px;
+  background-color: blue;
+  color: white;
+  border-radius: 50%;
+}
+
+.buttonD {
+  display: block;
+  padding: 8px 16px;
+  background-color: blue;
+  color: white;
+  border-radius: 50%;
+}
+
+.buttonE {
+  display: block;
+  padding: 8px 16px;
+  background-color: blue;
+  color: white;
+  border-radius: 50%;
+}
+
+.buttonF {
+  display: block;
+  padding: 8px 16px;
+  background-color: blue;
+  color: white;
+  border-radius: 50%;
 }
 
 #beforeAfterCharts {

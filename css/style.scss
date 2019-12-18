@@ -158,25 +158,29 @@ body {
 }
 
 #chartDecluttering {
-  position: relative;
   background-color: white;
 
-  img.declutter {
-    position: absolute;
-    width: 711px;
-    height: 417px;
-    top: 0;
-    left: 0;
-  }
+  .declutterWrapper {
+    display: block;
+    width: 100%;
+    height: 450px;
+
+    img.declutter {
+      position: absolute;
+      width: 711px;
+      height: 417px;
+      top: 0;
+      left: 0;
+    }
 
     #original {
       z-index: 0;
-      display: none;
+      // display: block;
     }
 
     #step1 {
       z-index: 1;
-      display: none;      
+      display: none;
     }
 
     #step2 {
@@ -208,7 +212,86 @@ body {
       z-index: 7;
       display: none;
     }
+  }
+
+  .buttonWrapper {
+    display: block;
+    width: 50%;
+    height: 50px;
+    margin: 0 auto;
+    text-align: center;
+  }
 }
+
+.button {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: blue;
+  color: white;
+  border-radius: 50%;
+}
+
+.buttonA {
+
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: blue;
+  color: white;
+  border-radius: 50%;
+}
+
+.buttonB {
+  display: block;
+  padding: 8px 16px;
+  background-color: blue;
+  color: white;
+  border-radius: 50%;
+}
+
+.buttonC {
+  display: block;
+  padding: 8px 16px;
+  background-color: blue;
+  color: white;
+  border-radius: 50%;
+}
+
+.buttonD {
+  display: block;
+  padding: 8px 16px;
+  background-color: blue;
+  color: white;
+  border-radius: 50%;
+}
+
+.buttonE {
+  display: block;
+  padding: 8px 16px;
+  background-color: blue;
+  color: white;
+  border-radius: 50%;
+}
+
+.buttonF {
+  display: block;
+  padding: 8px 16px;
+  background-color: blue;
+  color: white;
+  border-radius: 50%;
+}
+
+
+// .next {
+//   background-color: #4CAF50;
+//   color: white;
+// }
+
+// .round {
+//   border-radius: 50%;
+// }
+
+
+
 
 #beforeAfterCharts {
   display: flexbox;

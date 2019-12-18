@@ -15,7 +15,8 @@
   <!-- Use Illustrator to create an img.SVG containing the entire set of characters. Create a second img.SVG of the positioned selected characters. Superimpose the second image on the first image, and manipulate the opacity of each in JS. (Images must be rsponsive.) -->
   <div class="container" id="backgroundCharacters">
     <img id="charactersAll" src="images/characters-all.svg" alt="background characters pattern">
-    <img id="charactersSelective" src="images/characters-selective.svg" alt="letters spelling data visualization and telling the story">
+    <img id="charactersSelective" src="images/characters-selective.svg"
+      alt="letters spelling data visualization and telling the story">
 
   </div>
 
@@ -65,14 +66,18 @@
   </div>
 
   <div class="container" id="chartDecluttering">
-   
-    <img class="declutter" id="original" src="images/declutter-1.png" alt="original chart">
-    <img class="declutter" id="step1" src="images/declutter-2.png" alt="step1">
-    <img class="declutter" id="step2" src="images/declutter-3.png" alt="step2">
-    <img class="declutter" id="step3" src="images/declutter-4.png" alt="step3">
-    <img class="declutter" id="step4" src="images/declutter-5.png" alt="step4">
-    <img class="declutter" id="step5" src="images/declutter-6.png" alt="step5">
-    <img class="declutter" id="finished" src="images/declutter-7.png" alt="finished chart">
+    <div class="declutterWrapper">
+      <img class="declutter" id="original" src="images/declutter-1.png" alt="original chart">
+      <img class="declutter" id="step1" src="images/declutter-2.png" alt="step1">
+      <img class="declutter" id="step2" src="images/declutter-3.png" alt="step2">
+      <img class="declutter" id="step3" src="images/declutter-4.png" alt="step3">
+      <img class="declutter" id="step4" src="images/declutter-5.png" alt="step4">
+      <img class="declutter" id="step5" src="images/declutter-6.png" alt="step5">
+      <img class="declutter" id="finished" src="images/declutter-7.png" alt="finished chart">
+    </div>
+    <div class="buttoneWrapper">
+      <button class="button">Next step</button>
+     </div>
   </div>
 
   <div class="container" id="gestaltPrinciples">
@@ -86,7 +91,7 @@
 
 
   <!---------------------------------- javascript begins here---------------------------------------------->
-  
+
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 
@@ -105,7 +110,7 @@
   <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
 
   <!-- <script src="js/splitting.js"></script>  -->
-  
+
   <script src="js/script.js"></script>
 </body>
 
