@@ -41,13 +41,11 @@ $(document).ready(function () {
     })
   });
 
-  // $(".button").click(function () {
-  //   $("#step6").fadeOut(1000, function () {
-  //     $("#finished").fadeIn(1000);
-  //   })
-  // });
-
-
+  $(".buttonF").addClass(".buttonF").click(function () {
+    $("#step6").fadeOut(1000, function () {
+      $("#finished").fadeIn(1000);
+    })
+  });
 
 });
 
