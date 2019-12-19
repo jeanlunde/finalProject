@@ -201,62 +201,6 @@ body {
   text-align: center;
 }
 
-.button {
-  display: inline-block;
-  padding: 8px 16px;
-  background-color: blue;
-  color: white;
-  border-radius: 50%;
-}
-
-.buttonA {
-  display: inline-block;
-  padding: 8px 16px;
-  background-color: blue;
-  color: white;
-  border-radius: 50%;
-}
-
-.buttonB {
-  display: block;
-  padding: 8px 16px;
-  background-color: blue;
-  color: white;
-  border-radius: 50%;
-}
-
-.buttonC {
-  display: block;
-  padding: 8px 16px;
-  background-color: blue;
-  color: white;
-  border-radius: 50%;
-}
-
-.buttonD {
-  display: block;
-  padding: 8px 16px;
-  background-color: blue;
-  color: white;
-  border-radius: 50%;
-}
-
-.buttonE {
-  display: block;
-  padding: 8px 16px;
-  background-color: blue;
-  color: white;
-  border-radius: 50%;
-}
-
-.buttonF {
-  display: block;
-  padding: 8px 16px;
-  background-color: blue;
-  color: white;
-  border-radius: 50%;
-}
-
 #beforeAfterCharts {
   display: flexbox;
 }
