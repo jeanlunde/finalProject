@@ -46,7 +46,39 @@ $(document).ready(function () {
   //     $("#finished").fadeIn(1000);
   //   })
   // });
+  // function show() {
+  // //  $('.declutterWrapper').style.maxHeight = "200px";
+  //   var images = $("img.declutter");
+  //   console.log(images);
+  //   for(var i = 0; i < images.length; i++)
+  //   {
+  //     images[i].src = images[i].getAttribute('data-src');
+  //   }
+  // }
 
+  var arrImages = ['images/declutter-1.png', 'images/declutter-2.png', 'images/declutter-3.png', 'images/declutter-4.png', 'images/declutter-5.png', 'images/declutter-6.png',  'images/declutter-7.png'];
+  let imgCount = 0;
+  // let description = $('.declutterDescription');
+  // let desc = description[imgCount];
+  // console.log(description);
+  // console.log('current image ' + arrImages[imgCount]);
+  $('.button').click(function () {
+      imgCount = imgCount + 1;
+      if(imgCount < arrImages.length) {
+          $('.declutter').fadeIn().attr("src", arrImages[imgCount]);
+          
+          // $('.declutterDescription').css('display', 'block');
+          // $('.declutterDescription').css('color', 'red');
+          //console.log('current image ' + arrImages[imgCount]);
+          console.log('works');
+      }
+      else {
+          $('.declutter').fadeIn().attr("src", arrImages[0]);
+          imgCount = 0;
+      }
+   })
+
+  // document.ready function ends here
 });
 
 

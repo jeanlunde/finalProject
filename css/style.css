@@ -159,45 +159,6 @@ body {
   left: 0;
 }
 
-#chartDecluttering div.declutterWrapper #original {
-  z-index: 7;
-}
-
-#chartDecluttering div.declutterWrapper #step1 {
-  z-index: 6;
-  display: none;
-}
-
-#chartDecluttering div.declutterWrapper #step2 {
-  z-index: 5;
-  display: none;
-}
-
-#chartDecluttering div.declutterWrapper #step3 {
-  z-index: 4;
-  display: none;
-}
-
-#chartDecluttering div.declutterWrapper #step4 {
-  z-index: 3;
-  display: none;
-}
-
-#chartDecluttering div.declutterWrapper #step5 {
-  z-index: 2;
-  display: none;
-}
-
-#chartDecluttering div.declutterWrapper #step6 {
-  z-index: 1;
-  display: none;
-}
-
-#chartDecluttering div.declutterWrapper #finished {
-  z-index: 0;
-  display: none;
-}
-
 #chartDecluttering .buttonWrapper {
   display: block;
   width: 50%;
@@ -226,6 +187,7 @@ body {
   height: auto;
   top: 0;
   left: 0;
+  z-index: 1000;
 }
 
 #descriptionWrapper .declutterDescription #description1 {

@@ -179,45 +179,45 @@ body {
       left: 0;
     }
 
-    #original {
-      z-index: 7;
-      // display: block;
-    }
+    // #original {
+    //   z-index: 7;
+    //   // display: block;
+    // }
 
-    #step1 {
-      z-index: 6;
-      display: none;
-    }
+    // #step1 {
+    //   z-index: 6;
+    //   display: none;
+    // }
 
-    #step2 {
-      z-index: 5;
-      display: none;
-    }
+    // #step2 {
+    //   z-index: 5;
+    //   display: none;
+    // }
 
-    #step3 {
-      z-index: 4;
-      display: none;
-    }
+    // #step3 {
+    //   z-index: 4;
+    //   display: none;
+    // }
 
-    #step4 {
-      z-index: 3;
-      display: none;
-    }
+    // #step4 {
+    //   z-index: 3;
+    //   display: none;
+    // }
 
-    #step5 {
-      z-index: 2;
-      display: none;
-    }
+    // #step5 {
+    //   z-index: 2;
+    //   display: none;
+    // }
 
-    #step6 {
-      z-index: 1;
-      display: none;
-    }
+    // #step6 {
+    //   z-index: 1;
+    //   display: none;
+    // }
 
-    #finished {
-      z-index: 0;
-      display: none;
-    }
+    // #finished {
+    //   z-index: 0;
+    //   display: none;
+    // }
   }
 
   .buttonWrapper {
@@ -296,7 +296,7 @@ body {
     height: auto;
     top: 0;
     left: 0;
-       
+    z-index: 1000;   
     #description1 {
       z-index: 7;
       display: none;
