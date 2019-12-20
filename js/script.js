@@ -1,6 +1,6 @@
 $(document).ready(function () {
-  $("#charactersAll").fadeIn(4000);
-  $("#charactersSelective").delay(0).fadeIn(5000);
+  $("#charactersAll").fadeIn(5000);
+  $("#charactersSelective").delay(2000).fadeIn(5000);
   $("#beforeAfterCharts").click(function () {
     $('img', this).fadeToggle();
   });

@@ -26,8 +26,15 @@ body {
   background: white;
 }
 
+#backgroundCharacters {
+  background: #323643;
+}
+
 p {
   padding: 2em;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+
 }
 
 
@@ -164,14 +171,14 @@ body {
 #chartDecluttering {
   background-color: white;
 
-  div.declutterWrapper {
+  .declutterWrapper {
     width: 711px;
-    height: 60%;
+    height: 50%;
     position: relative;
     margin: 0 auto;
     margin-top: 7%;
 
-    img.declutter {
+    .declutter {
       position: absolute;
       width: 711px;
       height: 417px;
@@ -230,7 +237,7 @@ body {
     .button {
       display: inline-block;
       padding: 8px 16px;
-      background-color: blue;
+      background-color: rgba(105, 163, 230, 0.932);
       color: white;
       border-radius: 50%;
     }
@@ -289,6 +296,7 @@ body {
   width: 100%;
   height: 35%;
   position: relative;
+  margin-top: 3%;
 
   .declutterDescription {
     position: absolute;
@@ -297,11 +305,11 @@ body {
     top: 0;
     left: 0;
     // display: none;
-      
+
     #description1 {
       z-index: 7;
       display: block;
-     }
+    }
 
     #description2 {
       z-index: 6;
@@ -342,7 +350,14 @@ body {
 }
 
 #beforeAfterCharts {
-  background: white;
+  background: #323643;
+}
+
+#before-after {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin-top: 10%;
 }
 
 img.before {
@@ -361,4 +376,12 @@ img.after {
   top: 25%;
   left: 0;
   display: none;
+}
+
+#problems-solutions {
+  position: relative;
+  top: 450px;
+  width: 100%;
+  height: auto;
+  color: #fff;
 }
