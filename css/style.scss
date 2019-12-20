@@ -223,7 +223,7 @@ body {
   .buttonWrapper {
     display: block;
     width: 50%;
-    height: 10%;
+    height: 5%;
     margin: 0 auto;
     text-align: center;
 
@@ -296,10 +296,11 @@ body {
     height: auto;
     top: 0;
     left: 0;
-    z-index: 1000;   
+    // display: none;
+      
     #description1 {
       z-index: 7;
-      display: none;
+      display: block;
      }
 
     #description2 {
@@ -336,8 +337,8 @@ body {
 
 
 
-div #gestaltPrinciples {
-  background: red;
+#gestaltPrinciples {
+  background: black;
 }
 
 #beforeAfterCharts {
