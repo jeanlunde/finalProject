@@ -197,41 +197,6 @@ body {
   visibility: hidden;
 }
 
-#descriptionWrapper .declutterDescription #description1 {
-  z-index: 7;
-  visibility: hidden;
-}
-
-#descriptionWrapper .declutterDescription #description2 {
-  z-index: 6;
-  visibility: hidden;
-}
-
-#descriptionWrapper .declutterDescription #description3 {
-  z-index: 5;
-  visibility: hidden;
-}
-
-#descriptionWrapper .declutterDescription #description4 {
-  z-index: 4;
-  visibility: hidden;
-}
-
-#descriptionWrapper .declutterDescription #description5 {
-  z-index: 3;
-  visibility: hidden;
-}
-
-#descriptionWrapper .declutterDescription #description6 {
-  z-index: 2;
-  visibility: hidden;
-}
-
-#descriptionWrapper .declutterDescription #description7 {
-  z-index: 1;
-  visibility: hidden;
-}
-
 #gestaltPrinciples {
   background: black;
 }
