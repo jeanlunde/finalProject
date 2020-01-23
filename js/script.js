@@ -10,19 +10,19 @@ $(document).ready(function () {
 
   var arrImages = ['images/declutter-1.png', 'images/declutter-2.png', 'images/declutter-3.png', 'images/declutter-4.png', 'images/declutter-5.png', 'images/declutter-6.png', 'images/declutter-7.png'];
   let imgCount = 0;
-  var arrDescriptions = ["#description1", "#description2", "#description3", "description4", "#description5", "#description6", "#description7"];
+  var arrDescriptions = ["#description1", "#description2", "#description3", "#description4", "#description5", "#description6", "#description7"];
   let descrCount = 0;
 
   $(".declutterDescription:first-child").css("visibility", "visible");
   $(".button").click(function () {
-    descrCount = descrCount + 1;
+
     if ((descrCount < arrDescriptions.length) && (imgCount < arrImages.length)) {
-      //How can I hide the remainder divs? Write a function to hide them?  
+      descrCount = descrCount + 1;
       $(arrDescriptions[descrCount]).css("visibility", "visible");
-      $(".declutterDescription:first-child").css("visibility", "hidden");
+      $(arrDescriptions[descrCount - 1]).css("visibility", "hidden");
       imgCount = imgCount + 1;
       $('.declutter').fadeIn().attr("src", arrImages[imgCount]);
-      console.log('works');
+      console.log("works");
     } else {
       $(".declutterDescription").css("visibility", "hidden");
       $(".declutterDescription:first-child").css("visibility", "visible");
@@ -30,7 +30,6 @@ $(document).ready(function () {
       descrCount = 0;
       imgCount = 0;
     }
-
   })
 
   // document.ready function ends here
