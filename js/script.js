@@ -3,7 +3,7 @@ $(document).ready(function () {
     $("#charactersAll").fadeIn(5000);
   $("#charactersSelective").delay(2000).fadeIn(5000);
 
-  $("#beforeAfterCharts").click(function () {
+  $("#before-after").click(function () {
     $("img", this).fadeToggle();
   });
 
