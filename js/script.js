@@ -26,7 +26,7 @@ $(document).ready(function () {
     } else {
       $(".declutterDescription").css("visibility", "hidden");
       $(".declutterDescription:first-child").css("visibility", "visible");
-      $('.declutter').fadeIn().attr("src", arrImages[0]);
+      $(".declutter").fadeIn().attr("src", arrImages[0]);
       descrCount = 0;
       imgCount = 0;
     }
