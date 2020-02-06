@@ -197,8 +197,63 @@ body {
   visibility: hidden;
 }
 
+.gestalt {
+  color: white;
+}
+
 #gestaltPrinciples {
   background: black;
+}
+
+#gestaltPrinciples .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+}
+
+#gestaltPrinciples .column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+#gestaltPrinciples #column1 {
+  background-color: black;
+  height: 100vh;
+  padding: 7px;
+}
+
+#gestaltPrinciples #proximity, #gestaltPrinciples #similarity {
+  max-width: 100%;
+  height: auto;
+}
+
+#gestaltPrinciples #column2 {
+  background-color: black;
+  height: 100vh;
+  padding: 7px;
+}
+
+#gestaltPrinciples #column3 {
+  background-color: blue;
+  height: 100vh;
+  padding: 7px;
 }
 
 #beforeAfterCharts {

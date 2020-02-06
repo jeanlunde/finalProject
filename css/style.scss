@@ -223,10 +223,52 @@ body {
 }
 
 
+.gestalt {
+  color: white;
+}
 
 #gestaltPrinciples {
   background: black;
+
+  .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+  }
+
+    #column1 {
+      background-color: black;
+      height: 100vh;
+      padding: 7px;
+    }
+
+      #proximity, #similarity {
+        max-width: 100%;
+        height: auto;        
+      }
+
+    #column2 {
+      background-color: black;
+      height: 100vh;
+      padding: 7px;
+    }
+
+    #column3 {
+      background-color: blue;
+      height: 100vh;
+      padding: 7px;
+    }
 }
+
+ 
 
 #beforeAfterCharts {
   background: #323643;
