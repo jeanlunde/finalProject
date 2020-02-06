@@ -239,7 +239,8 @@ body {
   padding: 7px;
 }
 
-#gestaltPrinciples #proximity, #gestaltPrinciples #similarity {
+#gestaltPrinciples #proximity,
+#gestaltPrinciples #similarity {
   max-width: 100%;
   height: auto;
 }

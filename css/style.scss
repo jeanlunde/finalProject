@@ -13,7 +13,7 @@ body {
   position: relative;
   // padding: 9em;
   // margin: 0 -1em;
-  //To compensate for horizontal overflow. Inserted -1em margin left and right.
+  // To compensate for horizontal overflow. Inserted -1em margin left and right.
   margin: 0;
   padding: 0;
 }
@@ -57,9 +57,7 @@ p {
 }
 
 
-
-// Splitting scss begins here.
-
+// Splitting SCSS begins here.
 .tiler {
   display: inline-block;
   cursor: pointer;
@@ -160,6 +158,8 @@ body {
 
 //https://codepen.io/jal52/pen/eYYPdww
 //https://splitting.js.org/guide.html#what-is-splitting
+// Splitting SCSS ends here.
+
 
 
 #chartTypes {
@@ -184,7 +184,6 @@ body {
       top: 0;
       left: 0;
     }
-
   }
 
   .buttonWrapper {
@@ -201,8 +200,6 @@ body {
       color: white;
       border-radius: 50%;
     }
-
-
   }
 }
 
@@ -218,7 +215,7 @@ body {
     height: auto;
     top: 0;
     left: 0;
-    visibility: hidden;    
+    visibility: hidden;
   }
 }
 
@@ -244,31 +241,32 @@ body {
     flex: 1;
   }
 
-    #column1 {
-      background-color: black;
-      height: 100vh;
-      padding: 7px;
-    }
+  #column1 {
+    background-color: black;
+    height: 100vh;
+    padding: 7px;
+  }
 
-      #proximity, #similarity {
-        max-width: 100%;
-        height: auto;        
-      }
+  #proximity,
+  #similarity {
+    max-width: 100%;
+    height: auto;
+  }
 
-    #column2 {
-      background-color: black;
-      height: 100vh;
-      padding: 7px;
-    }
+  #column2 {
+    background-color: black;
+    height: 100vh;
+    padding: 7px;
+  }
 
-    #column3 {
-      background-color: blue;
-      height: 100vh;
-      padding: 7px;
-    }
+  #column3 {
+    background-color: blue;
+    height: 100vh;
+    padding: 7px;
+  }
 }
 
- 
+
 
 #beforeAfterCharts {
   background: #323643;
