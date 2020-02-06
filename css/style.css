@@ -203,6 +203,7 @@ body {
 
 #gestaltPrinciples {
   background: black;
+  height: 135vh;
 }
 
 #gestaltPrinciples .row {
@@ -237,12 +238,6 @@ body {
   background-color: black;
   height: 100vh;
   padding: 7px;
-}
-
-#gestaltPrinciples #proximity,
-#gestaltPrinciples #similarity {
-  max-width: 100%;
-  height: auto;
 }
 
 #gestaltPrinciples #column2 {

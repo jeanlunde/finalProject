@@ -226,6 +226,7 @@ body {
 
 #gestaltPrinciples {
   background: black;
+  height: 135vh;
 
   .row {
     display: flex;
@@ -245,12 +246,6 @@ body {
     background-color: black;
     height: 100vh;
     padding: 7px;
-  }
-
-  #proximity,
-  #similarity {
-    max-width: 100%;
-    height: auto;
   }
 
   #column2 {
