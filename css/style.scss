@@ -7,7 +7,7 @@ body {
 
 .container {
   width: 100vw;
-  height: 100vh;
+  height: 125vh;
   overflow: hidden;
   box-sizing: border-box;
   position: relative;
@@ -151,7 +151,7 @@ html {
 body {
   display: flex;
   flex-wrap: wrap;
-  max-width: 800px;
+  max-width: 960px;
   // padding: 2em;
   margin: auto;
 }
