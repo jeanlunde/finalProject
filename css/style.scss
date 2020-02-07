@@ -7,7 +7,7 @@ body {
 
 .container {
   width: 100vw;
-  height: 125vh;
+  height: 100vh;
   overflow: hidden;
   box-sizing: border-box;
   position: relative;
@@ -31,7 +31,7 @@ body {
 }
 
 p {
-  padding: 2em;
+  padding: 1em;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -211,7 +211,8 @@ body {
 
   .declutterDescription {
     position: absolute;
-    width: 100%;
+    margin-left: 4em;
+    width: 85%;
     height: auto;
     top: 0;
     left: 0;
@@ -271,7 +272,7 @@ body {
   position: relative;
   width: 100%;
   height: auto;
-  margin-top: 10%;
+  margin-top: 5%;
 }
 
 img.before {
@@ -294,8 +295,16 @@ img.after {
 
 #problems-solutions {
   position: relative;
-  top: 450px;
+  top: 75px;
   width: 100%;
   height: auto;
   color: #fff;
+}
+
+#toggleInstructions {
+  position: relative;
+  width: 100%;
+  height: auto;
+  bottom: 55px;
+  text-align: center;
 }
