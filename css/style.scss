@@ -227,9 +227,14 @@ body {
 
 #gestaltPrinciples {
   background: black;
-  height: 135vh;
+  height: 130vh;
+
+  #gestaltIntro {
+    margin-top: 2em;
+  }
 
   .row {
+    margin-top: 2%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -245,21 +250,39 @@ body {
 
   #column1 {
     background-color: black;
-    height: 100vh;
-    padding: 7px;
+    // padding: 7px;
+    height: 120vh;
+    margin: 0 auto;
   }
+
+    .principle {
+      text-align: center;
+    }
+
+    // #proximity, #similarity {
+    //   margin-bottom: 25px;
+    //   width: 388px;
+    //   height: auto;
+    //   text-align: center;      
+    // }
 
   #column2 {
     background-color: black;
-    height: 100vh;
-    padding: 7px;
+    // padding: 7px;
+    height: 120vh;
+    margin: 0 auto;
   }
 
-  #column3 {
-    background-color: blue;
-    height: 100vh;
-    padding: 7px;
-  }
+    .principle {
+      text-align: center;
+    }
+
+    // #connection, #continuity, #closure {
+    //   margin-bottom: 25px;
+    //   width: 388px;
+    //   height: auto;
+    //   text-align: center;
+    // }
 }
 
 
@@ -272,14 +295,14 @@ body {
   position: relative;
   width: 100%;
   height: auto;
-  margin-top: 5%;
+  margin-top: 10%;
 }
 
 img.before {
   position: absolute;
   width: 100%;
   height: auto;
-  top: 25%;
+  top: 35%;
   left: 0;
   display: block;
 }
@@ -288,14 +311,14 @@ img.after {
   position: absolute;
   width: 100%;
   height: auto;
-  top: 25%;
+  top: 35%;
   left: 0;
   display: none;
 }
 
 #problems-solutions {
   position: relative;
-  top: 75px;
+  top: 50px;
   width: 100%;
   height: auto;
   color: #fff;
@@ -304,7 +327,7 @@ img.after {
 #toggleInstructions {
   position: relative;
   width: 100%;
-  height: auto;
-  bottom: 55px;
+  height: 10%;
+  top: -50px;
   text-align: center;
 }

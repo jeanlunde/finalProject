@@ -204,10 +204,15 @@ body {
 
 #gestaltPrinciples {
   background: black;
-  height: 135vh;
+  height: 130vh;
+}
+
+#gestaltPrinciples #gestaltIntro {
+  margin-top: 2em;
 }
 
 #gestaltPrinciples .row {
+  margin-top: 2%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -237,20 +242,22 @@ body {
 
 #gestaltPrinciples #column1 {
   background-color: black;
-  height: 100vh;
-  padding: 7px;
+  height: 120vh;
+  margin: 0 auto;
+}
+
+#gestaltPrinciples .principle {
+  text-align: center;
 }
 
 #gestaltPrinciples #column2 {
   background-color: black;
-  height: 100vh;
-  padding: 7px;
+  height: 120vh;
+  margin: 0 auto;
 }
 
-#gestaltPrinciples #column3 {
-  background-color: blue;
-  height: 100vh;
-  padding: 7px;
+#gestaltPrinciples .principle {
+  text-align: center;
 }
 
 #beforeAfterCharts {
@@ -261,14 +268,14 @@ body {
   position: relative;
   width: 100%;
   height: auto;
-  margin-top: 5%;
+  margin-top: 10%;
 }
 
 img.before {
   position: absolute;
   width: 100%;
   height: auto;
-  top: 25%;
+  top: 35%;
   left: 0;
   display: block;
 }
@@ -277,14 +284,14 @@ img.after {
   position: absolute;
   width: 100%;
   height: auto;
-  top: 25%;
+  top: 35%;
   left: 0;
   display: none;
 }
 
 #problems-solutions {
   position: relative;
-  top: 75px;
+  top: 50px;
   width: 100%;
   height: auto;
   color: #fff;
@@ -293,8 +300,8 @@ img.after {
 #toggleInstructions {
   position: relative;
   width: 100%;
-  height: auto;
-  bottom: 55px;
+  height: 10%;
+  top: -50px;
   text-align: center;
 }
 /*# sourceMappingURL=style.css.map */

@@ -113,30 +113,47 @@
 
   <!-- Section discussing Gestalt principles -->
   <div class="container" id="gestaltPrinciples">
+    <div id="gestaltIntro">
+      <p class="gestalt"><b>Gestalt Principles.</b> Principles dealing with human perception—how humans see objects by
+        grouping similar elements, recognizing patterns and simplifying complex images—are discussed below.</p>
+    </div>
     <div class="row">
       <div class="column">
         <div id="column1">
-          <p class="gestalt"><b>Proximity.</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam,
-            asperiores.</p>
-          <img id="proximity" src="images/proximity.png" alt="proximity">
-          <p class="gestalt"><b>Similarity.</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ab
-            dolor tempore?</p>
-          <img id="similarity" src="images/similarity.png" alt="similarity">
+          <div class="principle" id="proximity">
+            <p class="gestalt"><b>Proximity.</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam,
+              asperiores.</p>
+            <img id="proximity" src="images/proximity.png" alt="proximity">
+          </div>
+
+          <div class="principle" id="similarity">
+            <p class="gestalt"><b>Similarity.</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ab
+              dolor tempore?</p>
+            <img id="similarity" src="images/similarity.png" alt="similarity">
+          </div>
 
         </div>
       </div>
       <div class="column">
         <div id="column2">
-          <p class="gestalt"><b>Connection.</b> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque id
-            aspernatur eaque?</p>
-          <img id="connection" src="images/connection.png" alt="connection">
-          <p class="gestalt"><b>Continuity.</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam,
-            asperiores.</p>
-          <img id="continuity" src="images/continuitya.png" alt="continuity">
-          <img id="Continuity" src="images/continuityb.png" alt="continuity">
-          <p class="gestalt"><b>Closure.</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ab
-            dolor tempore?</p>
-          <img id="closure" src="images/closure.png" alt="closure">
+          <div class="principle" id="connection">
+            <p class="gestalt"><b>Connection.</b> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque id
+              aspernatur eaque?</p>
+            <img id="connection" src="images/connection.png" alt="connection">
+          </div>
+
+          <div class="principle" id="continuity">
+            <p class="gestalt"><b>Continuity.</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam,
+              asperiores.</p>
+            <img id="continuity" src="images/continuitya.png" alt="continuity">
+            <img id="continuity" src="images/continuityb.png" alt="continuity">
+          </div>
+
+          <div class="principle" id="closure">
+            <p class="gestalt"><b>Closure.</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ab
+              dolor tempore?</p>
+            <img id="closure" src="images/closure.png" alt="closure">
+          </div>
         </div>
       </div>
     </div>
@@ -145,39 +162,40 @@
   <!-- Section with toggled before and after charts. -->
   <div class="container" id="beforeAfterCharts">
     <div id="problems-solutions">
-      <p><b>Before and After Charts.</b> The sample Before charts shown below exhibit various problems. The corresponding After charts suggest solutions.</P>
-    <div id="before-after">
-      <img class="before" id="survey-before" src="images/survey-before.jpg" alt="survey-before">
-      <img class="after" id="survey-after" src="images/survey-after.jpg" alt="survey-after">
+      <p><b>Before and After Charts.</b> The sample Before charts shown below exhibit various problems. The
+        corresponding After charts suggest solutions.</P>
+      <div id="before-after">
+        <img class="before" id="survey-before" src="images/survey-before.jpg" alt="survey-before">
+        <img class="after" id="survey-after" src="images/survey-after.jpg" alt="survey-after">
+      </div>
+      <div id="toggleInstructions">
+        <p><b>CLICK THE IMAGES BELOW TO TOGGLE BETWEEN THE BEFORE AND AFTER CHARTS</b></p>
+      </div>
     </div>
-    <div id="toggleInstructions">
-      <p><b>CLICK THE IMAGES BELOW TO TOGGLE BETWEEN THE BEFORE AND AFTER CHARTS</b></p>
-    </div>
-  </div>
 
 
-  <!---------------------------------- javascript begins here---------------------------------------------->
+    <!---------------------------------- javascript begins here---------------------------------------------->
 
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"
-    integrity="sha256-2p2tRZlPowp3P/04Pw2rqVCSbhyV/IB7ZEVUglrDS/c=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"
+      integrity="sha256-2p2tRZlPowp3P/04Pw2rqVCSbhyV/IB7ZEVUglrDS/c=" crossorigin="anonymous"></script>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"
-    integrity="sha256-XBVALc3QsDSQiDtiaBwNZ2rxCJTHzlUhhlDQ84J8bw8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"
+      integrity="sha256-XBVALc3QsDSQiDtiaBwNZ2rxCJTHzlUhhlDQ84J8bw8=" crossorigin="anonymous"></script>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"
-    integrity="sha256-+9YNuItWuR4sbqeaNiJOxG0BvptYz4fbUXbIZoH5Jwo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"
+      integrity="sha256-+9YNuItWuR4sbqeaNiJOxG0BvptYz4fbUXbIZoH5Jwo=" crossorigin="anonymous"></script>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
-    integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
+      integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
 
-  <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
+    <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
 
-  <!-- <script src="js/splitting.js"></script>  -->
+    <!-- <script src="js/splitting.js"></script>  -->
 
-  <script src="js/script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
