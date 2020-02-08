@@ -13,11 +13,23 @@
 </head>
 
 <body>
+  <!-- Top navigation bar -->
+  <header>
+    <div class="topnav">
+      <a class="active" href="#home">Home</a>
+      <a href="#chart-types">Chart Types</a>
+      <a href="#chart-decluttering">Chart Decluttering</a>
+      <a href="#gestalt-principles">Gestalt Principles</a>
+      <a href="#before-and-after">Before & After Charts</a>
+    </div>
+  </header>
+
   <!-- The home page displaying a character background.  -->
   <div class="container" id="backgroundCharacters">
-    <img id="charactersAll" src="images/characters-all.svg" alt="background characters pattern">
-    <img id="charactersSelective" src="images/characters-selective.svg"
-      alt="letters spelling data visualization and telling the story">
+      <img id="charactersAll" src="images/characters-all.svg" alt="background characters pattern">
+      <img id="charactersSelective" src="images/characters-selective.svg"
+        alt="letters spelling data visualization and telling the story">
+    </div>
   </div>
 
   <!-- The 3 x 3 array displaying chart type images. -->
@@ -84,7 +96,7 @@
       </div>
 
       <div class="declutterDescription" id="description3">
-        <p><b>Gridlines removed.</b> Next we'll remove the graph's data markers.</p>
+        <p><b>Horizontal gridlines removed.</b> Next we'll remove the graph's data markers.</p>
       </div>
 
       <div class="declutterDescription" id="description4">
@@ -117,43 +129,40 @@
       <p class="gestalt"><b>Gestalt Principles.</b> Principles dealing with human perception—how humans see objects by
         grouping similar elements, recognizing patterns and simplifying complex images—are discussed below.</p>
     </div>
+
     <div class="row">
-      <div class="column">
-        <div id="column1">
-          <div class="principle" id="proximity">
-            <p class="gestalt"><b>Proximity.</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam,
-              asperiores.</p>
-            <img id="proximity" src="images/proximity.png" alt="proximity">
-          </div>
+      <div class="column" id="column1">
+        <div class="principle" id="proximity">
+          <p class="gestalt"><b>Proximity.</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam,
+            asperiores.</p>
+          <img id="proximity" src="images/proximity.png" alt="proximity">
+        </div>
 
-          <div class="principle" id="similarity">
-            <p class="gestalt"><b>Similarity.</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ab
-              dolor tempore?</p>
-            <img id="similarity" src="images/similarity.png" alt="similarity">
-          </div>
-
+        <div class="principle" id="similarity">
+          <p class="gestalt"><b>Similarity.</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ab
+            dolor tempore?</p>
+          <img id="similarity" src="images/similarity.png" alt="similarity">
         </div>
       </div>
-      <div class="column">
-        <div id="column2">
-          <div class="principle" id="connection">
-            <p class="gestalt"><b>Connection.</b> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque id
-              aspernatur eaque?</p>
-            <img id="connection" src="images/connection.png" alt="connection">
-          </div>
 
-          <div class="principle" id="continuity">
-            <p class="gestalt"><b>Continuity.</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam,
-              asperiores.</p>
-            <img id="continuity" src="images/continuitya.png" alt="continuity">
-            <img id="continuity" src="images/continuityb.png" alt="continuity">
-          </div>
+      <div class="column" id="column2">
+        <div class="principle" id="connection">
+          <p class="gestalt"><b>Connection.</b> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque id
+            aspernatur eaque?</p>
+          <img id="connection" src="images/connection.png" alt="connection">
+        </div>
 
-          <div class="principle" id="closure">
-            <p class="gestalt"><b>Closure.</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ab
-              dolor tempore?</p>
-            <img id="closure" src="images/closure.png" alt="closure">
-          </div>
+        <div class="principle" id="continuity">
+          <p class="gestalt"><b>Continuity.</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam,
+            asperiores.</p>
+          <img id="continuity" src="images/continuitya.png" alt="continuity">
+          <img id="continuity" src="images/continuityb.png" alt="continuity">
+        </div>
+
+        <div class="principle" id="closure">
+          <p class="gestalt"><b>Closure.</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ab
+            dolor tempore?</p>
+          <img id="closure" src="images/closure.png" alt="closure">
         </div>
       </div>
     </div>

@@ -3,11 +3,30 @@ html,
 body {
   margin: 0;
   padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+header {
+  width: 100vw;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #323643;  ;
+}
+
+.topnav a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 20px 15px;
+  text-decoration: none;
+  font-size: 1em;
 }
 
 .container {
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   overflow: hidden;
   box-sizing: border-box;
   position: relative;
@@ -28,6 +47,7 @@ body {
 
 #backgroundCharacters {
   background: #323643;
+  text-align: center;
 }
 
 p {
@@ -35,10 +55,9 @@ p {
   font-family: 'Montserrat', sans-serif;
 }
 
-
 #charactersAll {
-  width: 100%;
-  height: auto;
+  width: 960px;
+  height: 100%;
   position: absolute;
   top: 0;
   left: 0;
@@ -47,8 +66,8 @@ p {
 }
 
 #charactersSelective {
-  width: 100%;
-  height: auto;
+  width: 960px;
+  height: 100%;
   position: absolute;
   top: 0;
   left: 0;
@@ -143,7 +162,7 @@ p {
 }
 
 html {
-  height: 100%;
+  min-height: 100%;
   display: flex;
   background: #323643;
 }
@@ -227,7 +246,7 @@ body {
 
 #gestaltPrinciples {
   background: black;
-  height: 130vh;
+  // height: 130vh;
 
   #gestaltIntro {
     margin-top: 2em;
@@ -246,12 +265,6 @@ body {
     flex-direction: column;
     flex-basis: 100%;
     flex: 1;
-  }
-
-  #column1 {
-    background-color: black;
-    // padding: 7px;
-    height: 120vh;
     margin: 0 auto;
   }
 
@@ -259,30 +272,9 @@ body {
       text-align: center;
     }
 
-    // #proximity, #similarity {
-    //   margin-bottom: 25px;
-    //   width: 388px;
-    //   height: auto;
-    //   text-align: center;      
-    // }
-
-  #column2 {
-    background-color: black;
-    // padding: 7px;
-    height: 120vh;
-    margin: 0 auto;
-  }
-
-    .principle {
-      text-align: center;
+    #proximity, #similarity, #connection, #continuity, #closure {
+      padding-bottom: 10px;
     }
-
-    // #connection, #continuity, #closure {
-    //   margin-bottom: 25px;
-    //   width: 388px;
-    //   height: auto;
-    //   text-align: center;
-    // }
 }
 
 
@@ -299,6 +291,7 @@ body {
 }
 
 img.before {
+  margin-top: 30px;
   position: absolute;
   width: 100%;
   height: auto;
@@ -308,6 +301,7 @@ img.before {
 }
 
 img.after {
+  margin-top: 30px;
   position: absolute;
   width: 100%;
   height: auto;
