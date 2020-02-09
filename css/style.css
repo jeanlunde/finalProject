@@ -35,12 +35,18 @@ header {
   padding: 0;
 }
 
-.container:nth-child(odd) {
-  background: black;
+p {
+  font-family: 'Montserrat', sans-serif;
 }
 
-.container:nth-child(even) {
-  background: white;
+.white-text {
+  color: white;
+  padding: 0px 20px 25px;
+}
+
+.black-text {
+  color: black;
+  padding: 0px 20px 25px;
 }
 
 #backgroundCharacters {
@@ -48,14 +54,9 @@ header {
   text-align: center;
 }
 
-p {
-  padding: 1em;
-  font-family: 'Montserrat', sans-serif;
-}
-
 #charactersAll {
-  width: 960px;
-  height: 100%;
+  width: 100%;
+  height: auto;
   position: absolute;
   top: 0;
   left: 0;
@@ -64,8 +65,8 @@ p {
 }
 
 #charactersSelective {
-  width: 960px;
-  height: 100%;
+  width: 100%;
+  height: auto;
   position: absolute;
   top: 0;
   left: 0;
@@ -160,13 +161,12 @@ body {
   margin: auto;
 }
 
-#chartTypes {
-  background: #323643;
-  padding-top: 100px;
-}
-
 #chartDecluttering {
   background-color: white;
+}
+
+#chartDecluttering #declutterIntro {
+  margin-top: 50px;
 }
 
 #chartDecluttering .declutterWrapper {
@@ -218,16 +218,12 @@ body {
   visibility: hidden;
 }
 
-.gestalt {
-  color: white;
-}
-
 #gestaltPrinciples {
   background: black;
 }
 
 #gestaltPrinciples #gestaltIntro {
-  margin-top: 2em;
+  margin-top: 50px;
 }
 
 #gestaltPrinciples .row {
@@ -264,7 +260,11 @@ body {
   text-align: center;
 }
 
-#gestaltPrinciples #proximity, #gestaltPrinciples #similarity, #gestaltPrinciples #connection, #gestaltPrinciples #continuity, #gestaltPrinciples #closure {
+#gestaltPrinciples #proximity,
+#gestaltPrinciples #similarity,
+#gestaltPrinciples #connection,
+#gestaltPrinciples #continuity,
+#gestaltPrinciples #closure {
   padding-bottom: 10px;
 }
 

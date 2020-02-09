@@ -12,7 +12,8 @@ header {
 
 .topnav {
   overflow: hidden;
-  background-color: #323643;  ;
+  background-color: #323643;
+  ;
 }
 
 .topnav a {
@@ -37,12 +38,22 @@ header {
   padding: 0;
 }
 
-.container:nth-child(odd) {
-  background: black;
+p {
+  font-family: 'Montserrat', sans-serif;
 }
 
-.container:nth-child(even) {
-  background: white;
+.white-text {
+  color: white;
+  padding: 0px 20px 25px;
+  // padding-bottom: 25px;
+  // padding-left: 15px;
+}
+
+.black-text {
+  color: black;
+  padding: 0px 20px 25px;
+  // padding-bottom: 25px;
+  // padding-left: 15px;
 }
 
 #backgroundCharacters {
@@ -50,14 +61,9 @@ header {
   text-align: center;
 }
 
-p {
-  padding: 1em;
-  font-family: 'Montserrat', sans-serif;
-}
-
 #charactersAll {
-  width: 960px;
-  height: 100%;
+  width: 100%;
+  height: auto;
   position: absolute;
   top: 0;
   left: 0;
@@ -66,8 +72,8 @@ p {
 }
 
 #charactersSelective {
-  width: 960px;
-  height: 100%;
+  width: 100%;
+  height: auto;
   position: absolute;
   top: 0;
   left: 0;
@@ -181,13 +187,13 @@ body {
 
 
 
-#chartTypes {
-  background: #323643;
-  padding-top: 100px;
-}
 
 #chartDecluttering {
   background-color: white;
+
+  #declutterIntro {
+    margin-top: 50px;
+  }
 
   .declutterWrapper {
     width: 711px;
@@ -240,16 +246,12 @@ body {
 }
 
 
-.gestalt {
-  color: white;
-}
-
 #gestaltPrinciples {
   background: black;
   // height: 130vh;
 
   #gestaltIntro {
-    margin-top: 2em;
+    margin-top: 50px;
   }
 
   .row {
@@ -268,13 +270,17 @@ body {
     margin: 0 auto;
   }
 
-    .principle {
-      text-align: center;
-    }
+  .principle {
+    text-align: center;
+  }
 
-    #proximity, #similarity, #connection, #continuity, #closure {
-      padding-bottom: 10px;
-    }
+  #proximity,
+  #similarity,
+  #connection,
+  #continuity,
+  #closure {
+    padding-bottom: 10px;
+  }
 }
 
 
