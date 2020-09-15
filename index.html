@@ -15,13 +15,13 @@
 <body>
   <!-- Top navigation bar -->
   <header>
-    <div class="topnav">
+    <ul class="topnav">
       <a class="active" href="#home">Home</a>
-      <a href="#chart-types">Chart Types</a>
-      <a href="#chart-decluttering">Chart Decluttering</a>
-      <a href="#gestalt-principles">Gestalt Principles</a>
-      <a href="#before-and-after">Before & After Charts</a>
-    </div>
+      <a href="#chartTypes">Chart Types</a>
+      <a href="#chartDecluttering">Chart Decluttering</a>
+      <a href="#gestaltPrinciples">Gestalt Principles</a>
+      <a href="#beforeAfterCharts">Before & After Charts</a>
+    </ul>
   </header>
 
   <!-- The home page displaying a character background.  -->
@@ -32,188 +32,194 @@
   </div>
   </div>
 
-  <!-- The 3 x 3 array displaying chart type images. -->
-  <div class="container" id="chartTypes">
-    <h2 class="white-text">Chart Types.</h2>
-    <p class="white-text">One of the first decisions a designer makes is chart type. Choose the most appropiate for your
-      dataset.</p>
-
-    <div class="tiler">
-      <img src="images/horizontal-bar.jpg" />
-    </div>
-
-    <div class="tiler">
-      <img src="images/vertical-bar.jpg" />
-    </div>
-
-    <div class="tiler">
-      <img src="images/line.jpg" />
-    </div>
-
-    <div class="tiler">
-      <img src="images/stacked-bar.jpg" />
-    </div>
-
-    <div class="tiler">
-      <img src="images/simple-text.jpg" />
-    </div>
-
-    <div class="tiler">
-      <img src="images/slope-graph.jpg" />
-    </div>
-
-    <div class="tiler">
-      <img src="images/scatterplot.jpg" />
-    </div>
-
-    <div class="tiler">
-      <img src="images/heatmap.jpg" />
-    </div>
-
-    <div class="tiler">
-      <img src="images/pie.jpg" />
-    </div>
-  </div>
-
-  <!-- The section depicting a step-by-step chart improvement progression upon button click. -->
-  <div class="container" id="chartDecluttering">
-    <div id="declutterIntro">
-      <h2 class="black-text">Chart Decluttering</h2>
-      <p class="black-text">The chart below could be greatly improved by removing unnecessary elements. Click the button
-        to progress from the default Excel chart to the final improved version.</p>
-    </div>
-    <div class="declutterWrapper">
-      <img class="declutter" src="images/declutter-1.png">
-
-    </div>
-    <div class="buttonWrapper">
-      <button class="button">Next step</button>
-    </div>
-
-    <!-- Descriptions for each of the steps -->
-    <div id="descriptionWrapper">
-      <div class="declutterDescription" id="description1">
-        <p><b>Original graph.</b> The original graph is typical of a default, Excel generated graph. There are several
-          improvements we can make to the graph by simply removing clutter. The first item we'll remove is the border
-          surrounding the entire graph. The border is unnecessary.
+    <!-- The 3 x 3 array displaying chart type images. -->
+    <div class="container" id="chartTypes">
+      <div id="chartTypesIntro">
+        <h2 class="white-text">Chart Types.</h2>
+        <p class="white-text">One of the first decisions a designer makes is chart type. Choose the most appropiate for
+          your
+          dataset.</p>
+      </div>
+      <div class="tiler">
+        <img src="images/horizontal-bar.jpg" />
       </div>
 
-      <div class="declutterDescription" id="description2">
-        <p><b>Border removed.</b> Next we'll remove the horizontal gridlines running through the chart.</p>
+      <div class="tiler">
+        <img src="images/vertical-bar.jpg" />
       </div>
 
-      <div class="declutterDescription" id="description3">
-        <p><b>Horizontal gridlines removed.</b> Next we'll remove the graph's data markers.</p>
+      <div class="tiler">
+        <img src="images/line.jpg" />
       </div>
 
-      <div class="declutterDescription" id="description4">
-        <p><b>Data markers removed.</b> Next we'll clean up the axis labels. In the horizontal axis, the months can be
-          abbreviated to eliminate the need for the angled text. In the vertical axis, the two decimal point accuracy
-          can be eliminated since it serves no purpose other than to add clutter.</p>
+      <div class="tiler">
+        <img src="images/stacked-bar.jpg" />
       </div>
 
-      <div class="declutterDescription" id="description5">
-        <p><b>Axis labels cleaned up.</b> Next we'll label the graph's data directly in order to eliminate the need for
-          the legend. The labels "Received" and "Processed" can be placed right next to their corresponding line graphs.
-        </p>
+      <div class="tiler">
+        <img src="images/simple-text.jpg" />
       </div>
 
-      <div class="declutterDescription" id="description6">
-        <p><b>Data labeled directly.</b> Lastly, we'll leverage consistent color. The colors in the data labels can be
-          changed to match the colors in their corresponding line graphs.</p>
+      <div class="tiler">
+        <img src="images/slope-graph.jpg" />
       </div>
 
-      <div class="declutterDescription" id="description7">
-        <p><b>Consistent color leveraged.</b> Our finished graph improves viewer readibility. The viewer no longer has
-          to wade through unnecessary clutter to perceive the story. To start over, click the next button again.</p>
+      <div class="tiler">
+        <img src="images/scatterplot.jpg" />
+      </div>
+
+      <div class="tiler">
+        <img src="images/heatmap.jpg" />
+      </div>
+
+      <div class="tiler">
+        <img src="images/pie.jpg" />
       </div>
     </div>
-  </div>
 
-  <!-- Section discussing Gestalt principles -->
-  <div class="container" id="gestaltPrinciples">
-    <div id="gestaltIntro">
-      <h2 class="white-text">Gestalt Principles.</h2>
-      <p class="white-text">Principles dealing with human perception—how humans see objects by grouping similar
-        elements, recognizing patterns and simplifying complex images—are discussed below.</p>
-    </div>
+    <!-- The section depicting a step-by-step chart improvement progression upon button click. -->
+    <div class="container" id="chartDecluttering">
+      <div id="declutterIntro">
+        <h2 class="black-text">Chart Decluttering</h2>
+        <p class="black-text">The chart below could be greatly improved by removing unnecessary elements. Click the
+          button
+          to progress from the default Excel chart to the final improved version.</p>
+      </div>
+      <div class="declutterWrapper">
+        <img class="declutter" src="images/declutter-1.png">
 
-    <div class="row">
-      <div class="column" id="column1">
-        <div class="principle" id="proximity">
-          <p class="white-text"><b>Proximity.</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam,
-            asperiores.</p>
-          <img id="proximity" src="images/proximity.png" alt="proximity">
+      </div>
+      <div class="buttonWrapper">
+        <button class="button">Next step</button>
+      </div>
+
+      <!-- Descriptions for each of the steps -->
+      <div id="descriptionWrapper">
+        <div class="declutterDescription" id="description1">
+          <p><b>Original graph.</b> The original graph is typical of a default, Excel generated graph. There are several
+            improvements we can make to the graph by simply removing clutter. The first item we'll remove is the border
+            surrounding the entire graph. The border is unnecessary.
         </div>
 
-        <div class="principle" id="similarity">
-          <p class="white-text"><b>Similarity.</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ab
-            dolor tempore?</p>
-          <img id="similarity" src="images/similarity.png" alt="similarity">
-        </div>
-      </div>
-
-      <div class="column" id="column2">
-        <div class="principle" id="connection">
-          <p class="white-text"><b>Connection.</b> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque id
-            aspernatur eaque?</p>
-          <img id="connection" src="images/connection.png" alt="connection">
+        <div class="declutterDescription" id="description2">
+          <p><b>Border removed.</b> Next we'll remove the horizontal gridlines running through the chart.</p>
         </div>
 
-        <div class="principle" id="continuity">
-          <p class="white-text"><b>Continuity.</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam,
-            asperiores.</p>
-          <img id="continuity" src="images/continuitya.png" alt="continuity">
-          <img id="continuity" src="images/continuityb.png" alt="continuity">
+        <div class="declutterDescription" id="description3">
+          <p><b>Horizontal gridlines removed.</b> Next we'll remove the graph's data markers.</p>
         </div>
 
-        <div class="principle" id="closure">
-          <p class="white-text"><b>Closure.</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ab
-            dolor tempore?</p>
-          <img id="closure" src="images/closure.png" alt="closure">
+        <div class="declutterDescription" id="description4">
+          <p><b>Data markers removed.</b> Next we'll clean up the axis labels. In the horizontal axis, the months can be
+            abbreviated to eliminate the need for the angled text. In the vertical axis, the two decimal point accuracy
+            can be eliminated since it serves no purpose other than to add clutter.</p>
+        </div>
+
+        <div class="declutterDescription" id="description5">
+          <p><b>Axis labels cleaned up.</b> Next we'll label the graph's data directly in order to eliminate the need
+            for
+            the legend. The labels "Received" and "Processed" can be placed right next to their corresponding line
+            graphs.
+          </p>
+        </div>
+
+        <div class="declutterDescription" id="description6">
+          <p><b>Data labeled directly.</b> Lastly, we'll leverage consistent color. The colors in the data labels can be
+            changed to match the colors in their corresponding line graphs.</p>
+        </div>
+
+        <div class="declutterDescription" id="description7">
+          <p><b>Consistent color leveraged.</b> Our finished graph improves viewer readibility. The viewer no longer has
+            to wade through unnecessary clutter to perceive the story. To start over, click the next button again.</p>
         </div>
       </div>
     </div>
-  </div>
 
-  <!-- Section with toggled before and after charts. -->
-  <div class="container" id="beforeAfterCharts">
-    <div id="problems-solutions">
-      <h2 class="white-text">Before & After Charts.</h2>
-      <p class="white-text">The sample Before charts shown below exhibit various problems. The
-        corresponding After charts suggest solutions.</P>
-      <div id="before-after">
-        <img class="before" id="survey-before" src="images/survey-before.jpg" alt="survey-before">
-        <img class="after" id="survey-after" src="images/survey-after.jpg" alt="survey-after">
+    <!-- Section discussing Gestalt principles -->
+    <div class="container" id="gestaltPrinciples">
+      <div id="gestaltIntro">
+        <h2 class="white-text">Gestalt Principles.</h2>
+        <p class="white-text">Principles dealing with human perception—how humans see objects by grouping similar
+          elements, recognizing patterns and simplifying complex images—are discussed below.</p>
       </div>
-      <div id="toggleInstructions">
-        <p><b>CLICK THE IMAGES BELOW TO TOGGLE BETWEEN THE BEFORE AND AFTER CHARTS</b></p>
+
+      <div class="row">
+        <div class="column" id="column1">
+          <div class="principle" id="proximity">
+            <p class="white-text"><b>Proximity.</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam,
+              asperiores.</p>
+            <img id="proximity" src="images/proximity.png" alt="proximity">
+          </div>
+
+          <div class="principle" id="similarity">
+            <p class="white-text"><b>Similarity.</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+              ab
+              dolor tempore?</p>
+            <img id="similarity" src="images/similarity.png" alt="similarity">
+          </div>
+        </div>
+
+        <div class="column" id="column2">
+          <div class="principle" id="connection">
+            <p class="white-text"><b>Connection.</b> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque id
+              aspernatur eaque?</p>
+            <img id="connection" src="images/connection.png" alt="connection">
+          </div>
+
+          <div class="principle" id="continuity">
+            <p class="white-text"><b>Continuity.</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam,
+              asperiores.</p>
+            <img id="continuity" src="images/continuitya.png" alt="continuity">
+            <img id="continuity" src="images/continuityb.png" alt="continuity">
+          </div>
+
+          <div class="principle" id="closure">
+            <p class="white-text"><b>Closure.</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ab
+              dolor tempore?</p>
+            <img id="closure" src="images/closure.png" alt="closure">
+          </div>
+        </div>
       </div>
     </div>
 
+    <!-- Section with toggled before and after charts. -->
+    <div class="container" id="beforeAfterCharts">
+      <div id="problems-solutions">
+        <h2 class="white-text">Before & After Charts.</h2>
+        <p class="white-text">The sample Before charts shown below exhibit various problems. The
+          corresponding After charts suggest solutions.</P>
+        <div id="before-after">
+          <img class="before" id="survey-before" src="images/survey-before.jpg" alt="survey-before">
+          <img class="after" id="survey-after" src="images/survey-after.jpg" alt="survey-after">
+        </div>
+        <div id="toggleInstructions">
+          <p><b>CLICK THE IMAGES BELOW TO TOGGLE BETWEEN THE BEFORE AND AFTER CHARTS</b></p>
+        </div>
+      </div>
 
-    <!---------------------------------- javascript begins here---------------------------------------------->
 
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <!---------------------------------- javascript begins here---------------------------------------------->
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"
-      integrity="sha256-2p2tRZlPowp3P/04Pw2rqVCSbhyV/IB7ZEVUglrDS/c=" crossorigin="anonymous"></script>
+      <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"
-      integrity="sha256-XBVALc3QsDSQiDtiaBwNZ2rxCJTHzlUhhlDQ84J8bw8=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"
+        integrity="sha256-2p2tRZlPowp3P/04Pw2rqVCSbhyV/IB7ZEVUglrDS/c=" crossorigin="anonymous"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"
-      integrity="sha256-+9YNuItWuR4sbqeaNiJOxG0BvptYz4fbUXbIZoH5Jwo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"
+        integrity="sha256-XBVALc3QsDSQiDtiaBwNZ2rxCJTHzlUhhlDQ84J8bw8=" crossorigin="anonymous"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
-      integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"
+        integrity="sha256-+9YNuItWuR4sbqeaNiJOxG0BvptYz4fbUXbIZoH5Jwo=" crossorigin="anonymous"></script>
 
-    <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
+        integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
 
-    <!-- <script src="js/splitting.js"></script>  -->
+      <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
 
-    <script src="js/script.js"></script>
+      <!-- <script src="js/splitting.js"></script>  -->
+
+      <script src="js/script.js"></script>
 </body>
 
 </html>
