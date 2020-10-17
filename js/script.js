@@ -33,6 +33,12 @@ $(document).ready(function () {
       descrCount = 0;
       imgCount = 0;
     }
+
+    if (descrCount >6) {
+      $(".button").html ("Start Over");
+    } else {
+      $(".button").html ("Next Step");
+    }
   })
 
   // document.ready function ends here
