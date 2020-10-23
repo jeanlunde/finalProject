@@ -200,9 +200,12 @@ body {
 #chartDecluttering .buttonWrapper .button {
   display: inline-block;
   padding: 8px 16px;
-  background-color: rgba(105, 163, 230, 0.932);
+  background-color: rgb(66, 141, 226);
   color: white;
-  border-radius: 50%;
+}
+
+#chartDecluttering .buttonWrapper .button:hover {
+  background-color: rgb(6, 69, 141)
 }
 
 #descriptionWrapper {
