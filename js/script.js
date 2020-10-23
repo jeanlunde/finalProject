@@ -16,6 +16,7 @@ $(document).ready(function () {
 
   // Make the beginning chart image visible.
   $(".declutterDescription:first-child").css("visibility", "visible");
+ 
   $(".button").click(function () {
 
     // Display each chart image and corresponding description as the button is clicked, while hiding the rest of the images and descriptions.
@@ -33,11 +34,13 @@ $(document).ready(function () {
       descrCount = 0;
       imgCount = 0;
     }
-
-    if (descrCount >6) {
+    // Change button text at the end of the chart improvement steps.
+    if (descrCount > 6) {
       $(".button").html ("Start Over");
+      $("#declutterIntro").css("visibility", "hidden");
     } else {
       $(".button").html ("Next Step");
+      $("#declutterIntro").css("visibility", "visible");
     }
   })
 

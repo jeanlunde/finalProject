@@ -24,14 +24,10 @@ header {
   font-size: 1em;
 }
 
-.topnav a:hover {
-  background-color: black;
-}
-
 .container {
   width: 100vw;
   min-height: 100vh;
-  /* overflow: hidden; */
+  overflow: hidden;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   position: relative;
@@ -165,10 +161,6 @@ body {
   margin: auto;
 }
 
-#chartTypesIntro {
-  margin-top: 50px;
-}
-
 #chartDecluttering {
   background-color: white;
 }
@@ -204,12 +196,9 @@ body {
 #chartDecluttering .buttonWrapper .button {
   display: inline-block;
   padding: 8px 16px;
-  background-color: rgb(66, 141, 226);
+  background-color: rgba(105, 163, 230, 0.932);
   color: white;
-}
-
-#chartDecluttering .buttonWrapper .button:hover {
-  background-color: rgb(6, 69, 141)
+  border-radius: 50%;
 }
 
 #descriptionWrapper {
